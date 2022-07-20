@@ -1,0 +1,7 @@
+<%= simple_form_for resource do |form| %>
+  <%= form.input :name %>
+  <%= form.input :age, input_html: { min: 0 } %>
+  <%= form.input :cuteness %>
+  <%= form.input :softness %>
+  <%= form.button :submit %>
+<% end %>

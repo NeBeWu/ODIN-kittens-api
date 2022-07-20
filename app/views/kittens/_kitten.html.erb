@@ -1,0 +1,7 @@
+<p><%= kitten.name %></p>
+<p><%= kitten.age %></p>
+<p><%= kitten.cuteness %></p>
+<p><%= kitten.softness %></p>
+<%= link_to 'Show', kitten_path(kitten) unless action_name == 'show' %>
+<%= link_to 'Edit', edit_kitten_path(kitten) %>
+<%= link_to 'Delete', kitten_path(kitten), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>

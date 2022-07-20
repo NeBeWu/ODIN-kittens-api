@@ -1,2 +1,3 @@
-<h1>Kittens#edit</h1>
-<p>Find me in app/views/kittens/edit.html.erb</p>
+<h3>Edit kitten</h3>
+<%= render 'form', resource: @kitten %>
+<%= link_to 'Delete', kitten_path(@kitten), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
